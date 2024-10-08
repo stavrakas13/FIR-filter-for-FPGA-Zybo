@@ -16,15 +16,6 @@ int main() {
     init_platform();
     unsigned int A_ip, data_in_ip, valid_in_ip, clk_ip, rst_ip; // inputs
     unsigned int valid_out_ip, y_ip, B_ip; // outputs
-//    xil_printf("start");
-//    A_ip = 0xffffffff;
-//    xil_printf("A is: %d\n",A_ip);
-//    Xil_Out32((MY_IP_BASEADDR+0x00),A_ip);
-//    usleep(500);
-//
-//    B_ip = Xil_In32(MY_IP_BASEADDR + 0x04);
-//    xil_printf("B2 is: %d\n",B_ip);
-
 
     rst_ip = 1;
     data_in_ip = 0;
@@ -57,23 +48,6 @@ int main() {
 	    xil_printf("B_output %d is: %d\n\n", i, output);
     }
 
-//    rst_ip = 0;
-//    data_in_ip = 20;
-//    valid_in_ip = 1;
-//    rst_ip = rst_ip << 9;
-//    valid_in_ip = valid_in_ip << 8;
-//    A_ip = rst_ip | valid_in_ip | data_in_ip;
-//    xil_printf("A3 is: %d\n",A_ip);
-//
-//    Xil_Out32((MY_IP_BASEADDR+0x00),A_ip);
-//    usleep(500);
-//    do {
-//        B_ip = Xil_In32(MY_IP_BASEADDR + 0x04);
-////        xil_printf("waiting...\n");
-//    } //while ((B_ip & 0x00000001) == 1);
-//    while ((B_ip & 0x00010000) == 1);
-//
-//    xil_printf("B2 is: %d\n",B_ip);
     cleanup_platform();
     return 0;
 }
