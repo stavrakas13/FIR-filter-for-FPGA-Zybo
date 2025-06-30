@@ -2,9 +2,9 @@
 
 ## Overview
 
-This project implements a Finite Impulse Response (FIR) filter in VHDL, interfaced with a host processor via an AXI4Lite bus. The system consists of a hardware design (in `/home/stavros/Downloads/lab04b_final.srcs/final_axi.vhdl`) and a C test script (`/home/stavros/Downloads/lab04b_final.srcs/c_script.c`) that demonstrates how to interact with the hardware.
+This project implements a Finite Impulse Response (FIR) filter in VHDL, interfaced with a host processor via an AXI4Lite bus. The system consists of a hardware design and a C test script that demonstrates how to interact with the hardware.
 
-Implemented by Ioannis Danias and me.
+Implemented by Ioannis Danias and me on XILINX VIVADO 2018.3
 
 ---
 
